@@ -1,5 +1,4 @@
 import './Style.css'
-import Footer from './Footer'
 import BGIMG from './Servisystem_BGIMG.jpeg'
 import { Outlet, Link } from 'react-router-dom';
 import { Component } from 'react';
@@ -30,20 +29,25 @@ class MainPage extends Component {
                         </header> */}
 
                         <br></br>
-                        <section className="flex space-x-4">
+                        <section className="flex space-x-6  ">
 
-                            <Link to="/" >Home</Link>
+                            <Link className='font-normal hover:font-bold'
+                                to="/" >ServiSystem</Link>   {/*SS:ServiSystem */}
 
-                            {/* <div class="modal-dialog modal-dialog-scrollable">  
-                            </div> */}
+                            <Link className='font-normal hover:font-bold'
+                                to="/Services" >Services</Link>
 
-                            <Link to="/Services" >Services</Link>
-                            <Link to="/Testimonials">Testimonials</Link>
-                            <Link to="/About" >About</Link>
+                            <Link className='font-normal hover:font-bold'
+                                to="/Testimonials">Testimonials</Link>
+
+                            <Link className='font-normal hover:font-bold'
+                                to="/About" >About</Link>
+
+                            <Link className='font-normal hover:font-bold'
+                                to="/Signup" >Signup</Link>
+
                         </section>
                     </div>
-
-                    <Footer />
                 </div>
             </>
 
