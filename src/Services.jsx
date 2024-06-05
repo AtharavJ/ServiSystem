@@ -2,7 +2,6 @@ import TestimonialImage from './Testimonial.jpeg';
 import ServicesImage from './Services.png';
 import VisualsImage from './Visuals.jpeg';
 import { Link } from 'react-router-dom';
-import Allservices from './Allservices';
 export default function Services() {
     return (
         <>
