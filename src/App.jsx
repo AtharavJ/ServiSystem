@@ -8,6 +8,7 @@ import Services from './Services';
 import Copyright from './Copyright';
 import Getintouch from './Getintouch';
 import Allservices from './Allservices';
+import Plumberinfo from './Pages/Plumberinfo';
 import './App.css'
 import './Style.css'
 
@@ -31,6 +32,7 @@ function App() {
           <Route path='/Getintouch' element={<Getintouch />} ></Route>
           <Route path='/Signup' element={<Signup />} ></Route>
           <Route path='/Allservices' element={<Allservices />} ></Route>
+          <Route path='/Plumberinfo' element={<Plumberinfo />} ></Route>
         </Routes>
         <Footer />
       </Router>

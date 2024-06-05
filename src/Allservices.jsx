@@ -4,6 +4,7 @@ import ElectricalImg from './ElectricalImg.jpeg';
 import GroomingImg from './GroomingImg.jpeg';
 import HouseCleaningImg from './HouseCleaningImg.jpeg';
 import KitchenImg from './KitchenImg.jpeg';
+import { Link } from 'react-router-dom';
 
 
 
@@ -12,7 +13,7 @@ export default function Allservices() {
         <>
             <span >
                 <h2 className="text-center my-8 px-4 text-3xl font-semibold
-                 hover:scale-110   " >All Services</h2>        {/*add hover colour*/}
+                 hover:scale-110 hover:text-orange-700	  " >All Services</h2>        {/*add hover colour*/}
             </span>
 
             <br></br>
@@ -20,7 +21,8 @@ export default function Allservices() {
 
                 <div className=" w-80 h-72  m-4 border-solid border-4	rounded-md flex space-x-6 items-end justify-center bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
                     style={{ backgroundImage: `url(${PlumbingImg})` }}>
-                    <h2>Plumbing Services</h2>
+                    <Link to={"/Plumberinfo"} >Plumbing Services</Link>
+
                 </div>
 
                 <div className=" w-80 h-72 m-4 border-solid border-4 rounded-md flex space-x-6 items-end justify-center bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl" style={{ backgroundImage: `url(${HouseCleaningImg})` }}><h2>House Cleaning Services</h2>
