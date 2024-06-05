@@ -1,61 +1,40 @@
 import './Style.css'
-import BGIMG from './Servisystem_BGIMG.jpeg'
-import { Outlet, Link } from 'react-router-dom';
-import { Component } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import React from 'react';
 
-class MainPage extends Component {
+export default function MainPage() {
+    const location = useLocation();
+    return (
+        <>
+            <div>
 
-    render() {
-        // const myStyle = {
-        //     backgroundImage: `url(${BGIMG})`,
-        //     backgroundSize: "100%",
-        //     height: "1070px",
-        //     width: "100%",
-        //     marginTop: "-120px",
-        //     marginBottom: "0px",
-        //     fontSize: "50px",
-        //     backgroundSize: "cover",
-        //     backgroundRepeat: "no-repeat",
-        // };
-        return (
-            <>
-                {/* <div style={{ myStyle }}> */}
+                <section className="flex space-x-6  ">
 
-                <div>
-                    <div>
-                        {/* <header className='w-full h-35 border-4 border-rose-400 text-center rounded shadow-md'>
-                            <h1 className="text-purple-600 text-8xl font-serif">Welcome to ServiSystem</h1>
-                        </header> */}
+                    <Link className='font-normal hover:font-bold'
+                        to="/" >ServiSystem</Link>   {/*SS:ServiSystem */}
 
-                        <br></br>
-                        <section className="flex space-x-6  ">
+                    <Link className='font-normal hover:font-bold'
+                        to="/Services" >Services</Link>
 
-                            <Link className='font-normal hover:font-bold'
-                                to="/" >ServiSystem</Link>   {/*SS:ServiSystem */}
+                    <Link className='font-normal hover:font-bold'
+                        to="/Testimonials">Testimonials</Link>
 
-                            <Link className='font-normal hover:font-bold'
-                                to="/Services" >Services</Link>
+                    <Link className='font-normal hover:font-bold'
+                        to="/About" >About</Link>
 
-                            <Link className='font-normal hover:font-bold'
-                                to="/Testimonials">Testimonials</Link>
+                    <Link className='font-normal hover:font-bold'
+                        to="/Signup" >Signup</Link>
 
-                            <Link className='font-normal hover:font-bold'
-                                to="/About" >About</Link>
-
-                            <Link className='font-normal hover:font-bold'
-                                to="/Signup" >Signup</Link>
-
-                        </section>
-                    </div>
-                </div>
-            </>
-
-        )
-
-
-    }
-
+                </section>
+            </div>
+            {location.pathname === '/' && (<span>
+                <h2 className=' font-mono text-6xl hover:text-indigo-600 hover:capitalize'>
+                    Home services at your Doorstep
+                </h2>
+            </span>)}
+        </>
+    )
 }
 
-export default MainPage;
+
+
