@@ -13,7 +13,7 @@ export default function Allservices() {
         <>
             <span >
                 <h2 className="text-center my-8 px-4 text-3xl font-semibold
-                 hover:scale-110 hover:text-orange-700	  " >All Services</h2>        {/*add hover colour*/}
+                 hover:scale-110 hover:text-orange-700" >All Services</h2>        {/*add hover colour*/}
             </span>
 
             <br></br>
@@ -25,22 +25,26 @@ export default function Allservices() {
 
                 </div>
 
-                <div className=" w-80 h-72 m-4 border-solid border-4 rounded-md flex space-x-6 items-end justify-center bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl" style={{ backgroundImage: `url(${HouseCleaningImg})` }}><h2>House Cleaning Services</h2>
+                <div className=" w-80 h-72 m-4 border-solid border-4 rounded-md flex space-x-6 items-end justify-center bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl" style={{ backgroundImage: `url(${HouseCleaningImg})` }}>
+                    <Link to={"/Housecleanerdetails"}>House Cleaning Services</Link>
                 </div>
 
-                <div className=" w-80 h-72 m-4 border-solid border-4 rounded-md flex space-x-6 items-end justify-center bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl" style={{ backgroundImage: `url(${ElectricalImg})` }}><h2>Electrical-Related Services</h2>
+                <div className=" w-80 h-72 m-4 border-solid border-4 rounded-md flex space-x-6 items-end justify-center bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl" style={{ backgroundImage: `url(${ElectricalImg})` }}>
+                    <Link to={"/Electriciandetails"} >Electrical-Related Services</Link>
+                    <h2></h2>
                 </div>
 
                 <div className=" w-80 h-72 m-4 border-solid border-4 rounded-md flex space-x-6 items-end justify-center bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl" style={{ backgroundImage: `url(${GroomingImg})` }}>
-                    <h2>Men/Women Grooming Services</h2>
+                    <Link to={"/Groomingdetails"}>Men/Women Grooming Services</Link>
+
                 </div>
 
                 <div className=" w-80 h-72 m-4 border-solid border-4 rounded-md flex space-x-6 items-end justify-center bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl" style={{ backgroundColor: `url(${KitchenImg})` }} >
-                    <h2>Kitchen-Cleaning Services</h2>
+                    <Link to={"/Kitchencleaners"}>Kitchen-Cleaning Services</Link>
                 </div>
 
                 <div className=" w-80 h-72 m-4 border-solid border-4 rounded-md flex  items-end justify-center bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl" style={{ backgroundImage: `url(${AcImg})` }} >
-                    <h2>Ac/refrigerator-Related Services</h2>
+                    <Link to={"/Acservices"} >Ac/refrigerator-Related Services</Link>
                 </div>
             </section>
         </>

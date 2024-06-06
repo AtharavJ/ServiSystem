@@ -9,6 +9,11 @@ import Copyright from './Copyright';
 import Getintouch from './Getintouch';
 import Allservices from './Allservices';
 import Plumberinfo from './Pages/Plumberinfo';
+import Housecleanerdetails from './Pages/Housecleanerdetails';
+import Electriciandetails from './Pages/Electriciandetails';
+import Groomingdetails from './Pages/Groomingdetails';
+import Kitchencleaners from './Pages/Kitchencleaners';
+import Acservices from './Pages/Acservices';
 import './App.css'
 import './Style.css'
 
@@ -33,6 +38,11 @@ function App() {
           <Route path='/Signup' element={<Signup />} ></Route>
           <Route path='/Allservices' element={<Allservices />} ></Route>
           <Route path='/Plumberinfo' element={<Plumberinfo />} ></Route>
+          <Route path='/Housecleanerdetails' element={<Housecleanerdetails />}></Route>
+          <Route path='/Electriciandetails' element={<Electriciandetails />} ></Route>
+          <Route path='/Groomingdetails' element={<Groomingdetails />}></Route>
+          <Route path='/Kitchencleaners' element={<Kitchencleaners />} ></Route>
+          <Route path='/Acservices' element={<Acservices />}></Route>
         </Routes>
         <Footer />
       </Router>
