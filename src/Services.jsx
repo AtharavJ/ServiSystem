@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 export default function Services() {
     return (
         <>
+
             <span>
                 <h2 className="text-center my-8 px-4 text-3xl font-semibold
                  hover:scale-110 hover:text-orange-700"> All Services</h2>
@@ -27,6 +28,7 @@ export default function Services() {
                     <h4 className="text-white bg-black bg-opacity-50 w-full text-center py-2">Visuals</h4>
                 </div>
             </section>
+
         </>
     );
 }
