@@ -26,7 +26,7 @@ function App() {
   return (
     <>
       <Router>
-        <div className='  Navbar_div  w-full 	text-2xl font-serif shadow-md  text-purple-700 border-4 rounded-lg'>
+        <div className='  w-full 	text-2xl font-serif shadow-md  text-purple-700 border-4 rounded-lg'>
           <MainPage />
         </div>
         <condforspan />

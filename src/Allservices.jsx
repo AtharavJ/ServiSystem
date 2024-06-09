@@ -13,7 +13,7 @@ export default function Allservices() {
         <>
             <span >
                 <h2 className="text-center my-8 px-4 text-3xl font-semibold
-                 hover:scale-110 hover:text-orange-700" >All Services</h2>        {/*add hover colour*/}
+                 hover:scale-110 hover:text-orange-700" >All Services</h2>
             </span>
 
             <br></br>

@@ -1,18 +1,17 @@
+// import servisystemimg from '../Images/Servisystem_BGIMG.jpeg';
 import './Style.css'
 import { Link, useLocation } from 'react-router-dom';
 import React from 'react';
-
 export default function MainPage() {
     const location = useLocation();
     return (
         <>
             <div>
 
-                <section className="flex space-x-6  ">
+                <section className="flex space-x-6   ">
 
                     <Link className='font-normal hover:font-bold'
-                        to="/" >ServiSystem</Link>   {/*SS:ServiSystem */}
-
+                        to="/" >ServiSystem</Link>
                     <Link className='font-normal hover:font-bold'
                         to="/Services" >Services</Link>
 
