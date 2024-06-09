@@ -14,6 +14,8 @@ import Electriciandetails from './Pages/Electriciandetails';
 import Groomingdetails from './Pages/Groomingdetails';
 import Kitchencleaners from './Pages/Kitchencleaners';
 import Acservices from './Pages/Acservices';
+import Bookplumbingservice from './Pages/Bookplumbingservice';
+import Bookacservice from './Pages/Bookacservice';
 import './App.css'
 import './Style.css'
 
@@ -43,6 +45,8 @@ function App() {
           <Route path='/Groomingdetails' element={<Groomingdetails />}></Route>
           <Route path='/Kitchencleaners' element={<Kitchencleaners />} ></Route>
           <Route path='/Acservices' element={<Acservices />}></Route>
+          <Route path='/Bookplumbingservice' element={<Bookplumbingservice />} ></Route>
+          <Route path='/Bookacservice' element={<Bookacservice />}></Route>
         </Routes>
         <Footer />
       </Router>

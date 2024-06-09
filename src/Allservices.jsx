@@ -21,7 +21,8 @@ export default function Allservices() {
 
                 <div className=" w-80 h-72  m-4 border-solid border-4	rounded-md flex space-x-6 items-end justify-center bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl"
                     style={{ backgroundImage: `url(${PlumbingImg})` }}>
-                    <Link to={"/Plumberinfo"} >Plumbing Services</Link>
+                    {/* <Link to={"/Plumberinfo"} >Plumbing Services</Link> */}
+                    <Link to={"/Bookplumbingservice"}>Plumbing Services</Link>
 
                 </div>
 
@@ -44,7 +45,8 @@ export default function Allservices() {
                 </div>
 
                 <div className=" w-80 h-72 m-4 border-solid border-4 rounded-md flex  items-end justify-center bg-cover bg-center transition-transform duration-300 ease-in-out transform hover:scale-110 hover:shadow-2xl" style={{ backgroundImage: `url(${AcImg})` }} >
-                    <Link to={"/Acservices"} >Ac/refrigerator-Related Services</Link>
+
+                    <Link to={"/Bookacservice"}>Ac/refrigerator-Related Services</Link>
                 </div>
             </section>
         </>
