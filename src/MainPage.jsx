@@ -6,6 +6,7 @@ export default function MainPage() {
     const location = useLocation();
     return (
         <>
+
             <div className=""
             /* style={{
             //     backgroundImage: `url(${servisystemimg})`,

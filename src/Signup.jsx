@@ -93,11 +93,18 @@ export default function Signup() {
                             </div>
                             <div>
                                 <label className="block text-sm font-medium text-gray-700">Service Type:</label>
-                                <input
-                                    type="text"
+                                <select
                                     name="serviceType"
                                     className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
-                                />
+                                >
+                                    <option value="">Select a service</option>
+                                    <option value="plumbing">Plumbing</option>
+                                    <option value="electrical">Electrical</option>
+                                    <option value="cleaning">Cleaning</option>
+                                    <option value="gardening">Gardening</option>
+                                    <option value="transportation">Transportation</option>
+                                    <option value="tutoring">Tutoring</option>
+                                </select>
                             </div>
                             <button
                                 type="submit"
