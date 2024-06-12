@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import HomePage from './Pages/HomePage';
 import MainPage from './MainPage'
 import Footer from './Footer'
 import About from './About';
@@ -29,7 +30,6 @@ function App() {
         <div className='  w-full 	text-2xl font-serif shadow-md  text-purple-700 border-4 rounded-lg'>
           <MainPage />
         </div>
-        <condforspan />
         <Routes>
           <Route path='/MainPage' element={<MainPage />} ></Route>
           <Route path='/Services' element={<Services />} ></Route>
@@ -48,23 +48,25 @@ function App() {
           <Route path='/Bookplumbingservice' element={<Bookplumbingservice />} ></Route>
           <Route path='/Bookacservice' element={<Bookacservice />}></Route>
         </Routes>
+        {/* <HomePage /> */}
+        {/* <condforspan /> */}
         <Footer />
       </Router>
     </>
   )
 }
-function condforspan() {
-  const location = useLocation();
+// function condforspan() {
+//   const location = useLocation();
 
-  if (location.pathname === '/') {
-    return (<span>
-      <h2 className=' font-mono text-6xl hover:text-indigo-600 hover:capitalize'>
-        Home services at your Doorstep
-      </h2>
-    </span>);
-  }
-  return null;
+//   if (location.pathname === '/') {
+//     return (<span>
+//       <h2 className=' font-mono text-6xl hover:text-indigo-600 hover:capitalize'>
+//         Home services at your Doorstep
+//       </h2>
+//     </span>);
+//   }
+//   return null;
 
-}
+// }
 
 export default App
